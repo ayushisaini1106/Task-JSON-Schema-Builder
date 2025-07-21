@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f3f3f3;
+}
+
+.app {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.add-btn {
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px; 
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 40px;
+  transition: all 0.3s ease;
+  text-align: center;
+  align-self: flex-end;
+  background-color:#1654be;
+  cursor: pointer;
+}
+
+.add-btn.expanded{
+  width: 600px;
+}
+.add-btn:hover{
+  transform: scale(1.05);
+}
+
+
+.left-panel {
+  min-width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.right-panel {
+  flex: 1;
+  background: lightgray;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  border-radius: 8px;
+  height: auto;
+}
+
+
+.field-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  border-left: 3px solid #007bff30;
+  padding-left: 10px;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.fieldarea{
+  display: flex;
+  gap: 12px;
+}
+.field input {
+  width: 250px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field select {
+  width: 250px; 
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* .add-btn {
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #0056b3;
+} */
+
+.submit-btn {
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nested {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 40px; 
+  margin-top: 10px;
+  gap: 8px;
+}
+
+
+.toggle-switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;  
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  height: 20px;
+  transition: 0.4s;
+}
+
+.toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(18px);
+}
